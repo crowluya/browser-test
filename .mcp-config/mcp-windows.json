@@ -1,0 +1,23 @@
+{
+  "mcpServers": {
+    "chrome-devtools": {
+      "command": "npx",
+      "args": ["chrome-devtools-mcp@latest"]
+    },
+    "puppeteer": {
+      "command": "npx",
+      "args": ["-y", "@modelcontextprotocol/server-puppeteer"],
+      "env": {
+        "PUPPETEER_USER_DATA_DIR": "D:\\seocode\\tmp\\test-chrome-mcp\\.puppeteer-data"
+      }
+    },
+    "playwright": {
+      "command": "npx",
+      "args": ["-y", "@playwright/mcp"],
+      "env": {
+        "PLAYWRIGHT_USER_DATA_DIR": "D:\\seocode\\tmp\\test-chrome-mcp\\.playwright-data"
+      }
+    }
+  }
+}
+

@@ -1,0 +1,23 @@
+{
+  "name": "test-chrome-mcp",
+  "version": "1.0.0",
+  "description": "测试 Chrome DevTools MCP、Puppeteer MCP 和 Playwright MCP",
+  "type": "module",
+  "scripts": {
+    "test:chrome-devtools": "node tests/test-chrome-devtools.js",
+    "test:puppeteer": "node tests/test-puppeteer.js",
+    "test:playwright": "node tests/test-playwright.js",
+    "test:login": "node tests/test-login-persistence.js",
+    "test:all": "node tests/test-all.js"
+  },
+  "keywords": [
+    "mcp",
+    "chrome",
+    "puppeteer",
+    "playwright",
+    "automation"
+  ],
+  "author": "",
+  "license": "MIT"
+}
+
