@@ -25,7 +25,11 @@ npm run test:all                # Run all tests sequentially
 
 ## MCP Configuration
 
-MCP servers are configured in `.mcp-config/mcp.json`. To use these servers in Claude Code, the configuration must be copied to the appropriate location:
+MCP servers are configured in `.mcp-config/`. Two variants are available:
+- `mcp.json` - Uses relative paths (`./.puppeteer-data`), resolved from the working directory where Claude Code runs
+- `mcp-windows.json` - Uses absolute paths (`D:\\seocode\\tmp\\test-chrome-mcp\\.puppeteer-data`), more reliable on Windows
+
+To use these servers in Claude Code, copy the appropriate configuration to:
 
 - **Windows**: `%APPDATA%\Claude\mcp.json`
 - **macOS**: `~/Library/Application Support/Claude/mcp.json`
